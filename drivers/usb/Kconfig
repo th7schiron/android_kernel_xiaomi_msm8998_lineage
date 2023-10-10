@@ -74,6 +74,11 @@ config USB
 	  To compile this driver as a module, choose M here: the
 	  module will be called usbcore.
 
+config USB_OKCAR
+	tristate "USB_OKCAR"	
+	help
+          Say Y here to enable Usb Okcar Kernel Api
+
 if USB
 
 source "drivers/usb/core/Kconfig"

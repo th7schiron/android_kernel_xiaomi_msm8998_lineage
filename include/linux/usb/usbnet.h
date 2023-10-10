@@ -65,6 +65,7 @@ struct usbnet {
 	struct tasklet_struct	bh;
 
 	struct work_struct	kevent;
+	struct delayed_work fake_netconnect_kevent;
 	unsigned long		flags;
 #		define EVENT_TX_HALT	0
 #		define EVENT_RX_HALT	1
